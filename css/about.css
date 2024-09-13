@@ -1,0 +1,198 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+#icon{
+    width:30px;
+    cursor: pointer;
+}
+.head ul{
+    flex:1;
+    text-align:right ;
+}
+
+ 
+.head{
+    width:100%;
+    background-color:goldenrod;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    box-shadow:2px 3px 4px #f5f5f5d6;
+    top:0px;
+}
+.ico{
+    width:8%;
+    height:8%;
+    margin:10px;
+}
+label{
+    position: absolute;
+    width: 45px;
+    height: 22px;
+    right: 20px;
+    top: 20px;
+    border: 2px solid;
+    border-radius: 20px;
+}
+label:before{
+    position: absolute;
+    content: '';
+    width:20px;
+    height: 20px;
+    left: 1px;
+    top: 1px;
+    border-radius: 50%;
+    background: #000;
+    cursor: pointer;
+    transition: 0.4s;
+}
+label.active:before{
+    left: 24px;
+    background: #fff;
+}
+body.night{
+    background: #000;
+    color: #fff;
+}
+.head ul{
+   margin: 20px;
+}
+.head ul li{
+    display: inline;
+    margin:20px;
+}
+.head ul li a{
+    text-decoration: none;
+    font-family: "Moderustic", sans-serif;
+    color:white;
+    font-weight:500px;
+    font:14px;
+}
+ul li a img{
+    height: 20px;
+    width: 20px;
+}
+ul li a:hover{
+      color: red;
+}
+.menu-line{
+    height:3px;
+    width:20px;
+    background-color:white;
+    margin-bottom:3px;
+    margin-right: 5px;
+}
+.menu{
+    cursor: pointer;
+    display: none;
+    
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+}
+.section h1{
+    text-align: center;
+    margin: 40px;
+    color: darkblue;
+    font-size: 50px;
+    font-weight: bold;
+}
+.pic{
+    display: flex;
+    justify-items: end;
+}
+.pic img{
+    width:25rem;
+    border-radius: 10px;
+}
+.page2{
+    display: flex;
+    padding-left: 4rem;
+
+}
+.content,.pic{
+    flex-basis: 50%;
+}
+.content{
+    padding: 20px;
+}
+.content p{
+    
+    font-size:20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.content h2{
+    margin:20px;
+
+    font-size: 25px;
+    font-weight: bold;
+}
+.content ul{
+
+}
+.content ul li{
+    margin-left:50px;
+    font-size: 20px;
+}
+.btn{
+    margin:20px;
+    width:300px;
+    height:45px;
+}
+.btn button{
+    width:300px;
+    height:50px;
+    border-radius: 60px;
+    outline: none;
+    border: none;
+    background-color: darkblue;
+    color: aliceblue;
+    font-size:20px;
+    font-weight: bold;
+}
+body{
+    background-color:aliceblue ;
+}
+@media screen and (max-width:768px){
+   .pic{
+    display:none;
+}
+    
+
+}
+@media all and  (max-width:640px){
+    .head{
+      flex-direction: column;
+      width:100vw;
+    }
+    ul li{
+      display: block;
+      padding: 10px 0;
+    }
+    ul{
+      text-align: center;
+      display: none;
+      
+    }
+    .ico{
+      align-self: flex-start;
+      margin:10px 0px 0px 30px;
+    }
+    .menu{
+      display:block;
+      position: absolute;
+      right: 20px;
+      top:6px;
+    }
+   .showmenu{
+     display:block;
+   }
+  
+  }
+  
+    
+

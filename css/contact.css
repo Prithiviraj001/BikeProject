@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+*{
+  margin:0px;
+  padding:0px;
+}
+.head{
+  width:100%;
+  background-color:black;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  box-shadow:2px 3px 4px #f5f5f5d6;
+  top:0px;
+}
+.ico{
+  width:8%;
+  height:8%;
+  margin:10px;
+}
+.head ul{
+ margin: 20px;
+}
+.head ul li{
+  display: inline;
+  margin:20px;
+}
+.head ul li a{
+  text-decoration: none;
+  font-family: "Moderustic", sans-serif;
+  color:white;
+  font-weight:500px;
+  font:14px;
+}
+ul li a img{
+  height: 20px;
+  width: 20px;
+}
+.menu-line{
+  height:3px;
+  width:20px;
+  background-color:white;
+  margin-bottom:3px;
+  margin-right: 5px;
+}
+.menu{
+  cursor: pointer;
+  display: none;
+  
+}
+
+ul li a:hover{
+    color: red;
+}
+body{
+  background:aquamarine;
+}
+
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 350px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow:2px 3px 6px black; 
+}
+
+.wrapper h2{
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color:;
+}
+
+.wrapper .input_field{
+  margin-bottom: 10px;
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper textarea{
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  padding: 10px;
+}
+
+.wrapper textarea{
+  resize: none;
+  height: 80px;
+}
+
+.wrapper .btn input[type="submit"]{
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background: #fece0c;
+  color: #332902;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#error_message{
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+@media all and  (max-width:640px){
+  .head{
+    flex-direction: column;
+    width:100vw;
+  }
+  ul li{
+    display: block;
+    padding: 10px 0;
+  }
+  ul{
+    text-align: center;
+    display: none;
+    
+  }
+  .ico{
+    align-self: flex-start;
+    margin:10px 0px 0px 30px;
+  }
+  .menu{
+    display:block;
+    position: absolute;
+    right: 20px;
+    top:6px;
+  }
+ .showmenu{
+   display:block;
+ }
+
+}

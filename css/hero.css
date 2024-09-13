@@ -1,0 +1,158 @@
+*{
+    margin:0px;
+    padding:0px;
+
+}
+.head{
+    width:100%;
+    background-color:black;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    box-shadow:2px 3px 4px #f5f5f5d6;
+    top:0px;
+    
+}
+.ico{
+    width:8%;
+    height:8%;
+    margin:10px;
+}
+.head ul{
+   margin: 20px;
+}
+.head ul li{
+    display: inline;
+    margin:20px;
+}
+.head ul li a{
+    text-decoration: none;
+    font-family: "Moderustic", sans-serif;
+    color:white;
+    font-weight:500px;
+    font:14px;
+}
+ul li a img{
+    height: 20px;
+    width: 20px;
+}
+ul li a:hover{
+      color: red;
+}
+.menu-line{
+    height:3px;
+    width:20px;
+    background-color:white;
+    margin-bottom:3px;
+    margin-right: 5px;
+}
+.menu{
+    cursor: pointer;
+    display: none;
+    
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    width:20rem;
+    padding: 20px;
+    justify-content:space-around ;
+    background:transparent;
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px 2px #e0cc5d;
+}
+.content{
+   padding-left: 20px;
+   line-height: 2;
+   color:  #e0cc5d;
+
+}
+.section{
+    /* display:grid; */
+    /* grid-template-columns: 1fr 1fr; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 50px;
+    align-items: center;
+    margin-top: 40px;
+
+
+}
+.head1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:30px;
+}
+.pic{
+    width: 15rem;
+    height:13rem;
+}
+.btn button{
+   padding:15px;   
+   color: red; 
+   border-radius: 15px;
+   border: 2px solid red;
+   background-color: white;
+}
+.head1{
+    font-size: 25px;
+    color: white;
+}
+.container{
+    background-image: url(../images/background//360_F_304914196_XaD7nPyd1b8tlyLR9iZWV6geFJw6QULn.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.btn1 button{
+    font-size: 1.2rem;
+    border-radius:20rem;
+   padding:8px;
+   border: none;
+   outline: none;
+}
+.btn1 button:hover{
+    background-color: palevioletred;
+}
+@media screen and (max-width:768px){
+    .section{
+       display: grid;
+    grid-template-columns: 1fr;
+    margin-right: 20px;
+    margin-left: 0px;
+    
+    }
+
+} 
+
+@media all and  (max-width:640px){
+    .head{
+      flex-direction: column;
+      width:100vw;
+    }
+    ul li{
+      display: block;
+      padding: 10px 0;
+    }
+    ul{
+      text-align: center;
+      display: none;
+      
+    }
+    .ico{
+      align-self: flex-start;
+      margin:10px 0px 0px 30px;
+    }
+    .menu{
+      display:block;
+      position: absolute;
+      right: 20px;
+      top:6px;
+    }
+   .showmenu{
+     display:block;
+   }
+  
+  }
+  
